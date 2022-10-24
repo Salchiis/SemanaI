@@ -1,17 +1,78 @@
 {% load static %}
 
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+    <link rel=" stylesheet" href="{% static 'masterSCSS/globalMaster.css' %}">
+
+    <title>Carousel Template for Bootstrap</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/carousel/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
 </head>
-<body>
-    {% block body %}
-    
-    <h1>Hola mundo</h1>
-    
-    {% endblock body %}
+
+<body data-new-gr-c-s-check-loaded="14.1024.0" data-gr-ext-installed="">
+
+{% include 'navabarTop.html' %}
+    <main role="main">
+        <div class="container marketing">
+            <hr class="featurette-divider">
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">Coche bien chidori <span class="text-muted">Es neta xd</span></h2>
+                    <p class="lead">Cuando yo la vi dije si ese artur ofuera para mi perdoname</p>
+                </div>
+                <div class="col-md-5">
+                    <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500"
+                        style="width: 500px; height: 500px;"
+                        src="{% static 'img/eldelasrecargas.jpg' %}"
+                        data-holder-rendered="true">
+                </div>
+            </div>
+            <hr class="featurette-divider">
+            <div class="row featurette">
+                <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading">Me quede sin ideas<span class="text-muted">awua de owo.</span></h2>
+                    <p class="lead">awa de owo pero con sabor uwu que parece de ewe pero es de iwi </p>
+                </div>
+                <div class="col-md-5 order-md-1">
+                    <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500"
+                    src="{% static 'img/eldelasrecargas3.jpg' %}"
+                        data-holder-rendered="true" style="width: 500px; height: 500px;">
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">El de las recargas <span class="text-muted">v2.0.</span></h2>
+                    <p class="lead">El de las recargas.</p>
+                </div>
+                <div class="col-md-5">
+                    <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500"
+                    src="{% static 'img/eldelasrecargas2.jpg' %}"
+                    data-holder-rendered="true" style="width: 500px; height: 500px;">
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+        </div>
+
+      {% include 'footer.html' %}
+    </main>
+
+
 </body>
+
 </html>
