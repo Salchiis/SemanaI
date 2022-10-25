@@ -5,5 +5,5 @@ class miembros(models.Model):
     description = models.TextField()
     profilePicture = models.ImageField(
         upload_to='static/img', null=True, blank=True)
-    def _str_(self):
+    def __str__(self):
         return self.name
