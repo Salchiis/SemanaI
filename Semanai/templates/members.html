@@ -1,0 +1,55 @@
+{% load static %}
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+    <link rel=" stylesheet" href="{% static 'masterSCSS/globalMaster.css' %}">
+
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/carousel/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+</head>
+
+<body data-new-gr-c-s-check-loaded="14.1024.0" data-gr-ext-installed="">
+
+    {% include 'navabarTop.html' %}
+    <main role="main">
+        <div class="container marketing">
+
+           {% for member in members %}
+            <hr class="featurette-divider">
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">{{member.name}}</h2>
+                    <p class="lead">{{member.description}}</p>
+                </div>
+                <div class="col-md-5">
+                    <img class="featurette-image img-fluid mx-auto" src="holder.js/500x500/auto" alt="500x500"
+                        style="width: 500px; height: 500px;" src="{{member.profilePicture.url}}"
+                        data-holder-rendered="true">
+                </div>
+            </div>
+            {% endfor %}
+
+            
+
+            <hr class="featurette-divider">
+        </div>
+
+        {% include 'footer.html' %}
+    </main>
+
+
+</body>
+
+</html>
