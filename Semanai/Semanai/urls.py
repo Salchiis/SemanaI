@@ -24,5 +24,7 @@ urlpatterns = [
     path('',views.home,name="landingPage" ),
     path('members/',views.members,name="members"),
     path('contacts/',views.contacts,name="contacts"),
+    path('sections/',views.sections,name="sections"),
+
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 

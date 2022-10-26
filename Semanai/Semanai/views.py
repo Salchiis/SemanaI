@@ -17,3 +17,6 @@ def members(request):
 
 def contacts(request):
     return render(request,'contacto.html')
+
+def sections(request):
+    return render(request,'secciones.html')

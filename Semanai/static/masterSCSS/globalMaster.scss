@@ -1,0 +1,345 @@
+// Custom.scss
+$primary: #0085BB;
+$secondary: #F6871F;
+$blue: #0085BB;
+$cadmiumOrange900: #F6871F;
+$cadmiumOrange800: #F7963B;
+$cadmiumOrange700: #F8A04F;
+$cadmiumOrange600: #F8AB62;
+$cadmiumOrange500: #F9B577;
+$cadmiumOrange400: #FAC089;
+$cadmiumOrange300: #FBCA9D;
+$cadmiumOrange200: #FCD5B1;
+$cadmiumOrange100: #FDDFC4;
+$cadmiumOrange50: #FDDFC4;
+$blueNCS900: #0085BB;
+$blueNCS800: #00A1E0;
+$blueNCS700: #00AFF5;
+$blueNCS600: #0ABAFF;
+$blueNCS500: #1FBFFF;
+$blueNCS400: #33C5FF;
+$blueNCS300: #47CBFF;
+$blueNCS200: #5CD1FF;
+$blueNCS100: #70D7FF;
+$blueNCS50: #85DCFF;
+$indigoDye900: #00416B;
+$indigoDye800: #00568F;
+$indigoDye700: #0062A3;
+$indigoDye600: #006EB8;
+$indigoDye500: #007ACC;
+$indigoDye400: #0087E0;
+$indigoDye300: #0093F5;
+$indigoDye200: #0A9DFF;
+$indigoDye100: #1FA5FF;
+$indigoDye50: #33ADFF;
+$black900: #140A01;
+$black600: #757575;
+$black500: #F1F1F1;
+$white: #ffff;
+$red: #D32F2F;
+
+
+$theme-colors: (
+    "cadmiumOrange900": $cadmiumOrange900,
+    "cadmiumOrange800": $cadmiumOrange800,
+    "cadmiumOrange700": $cadmiumOrange700,
+    "cadmiumOrange600": $cadmiumOrange600,
+    "cadmiumOrange500": $cadmiumOrange500,
+    "cadmiumOrange400": $cadmiumOrange400,
+    "cadmiumOrange300": $cadmiumOrange300,
+    "cadmiumOrange200": $cadmiumOrange200,
+    "cadmiumOrange100": $cadmiumOrange100,
+    "cadmiumOrange50": $cadmiumOrange50,
+    "blueNCS900": $blueNCS900,
+    "blueNCS800": $blueNCS800,
+    "blueNCS700": $blueNCS700,
+    "blueNCS600": $blueNCS600,
+    "blueNCS500": $blueNCS500,
+    "blueNCS400": $blueNCS400,
+    "blueNCS300": $blueNCS300,
+    "blueNCS200": $blueNCS200,
+    "blueNCS100": $blueNCS100,
+    "blueNCS50": $blueNCS50,
+    "indigoDye900": $indigoDye900,
+    "indigoDye800": $indigoDye800,
+    "indigoDye700": $indigoDye700,
+    "indigoDye600": $indigoDye600,
+    "indigoDye500": $indigoDye500,
+    "indigoDye400": $indigoDye400,
+    "indigoDye300": $indigoDye300,
+    "indigoDye200": $indigoDye200,
+    "indigoDye100": $indigoDye100,
+    "indigoDye50": $indigoDye50,
+    "black900": $black900,
+    "black600": $black600,
+    "black500": $black500,
+    "white": $white,
+    "red": $red,
+);
+
+//Shadows for buttons
+.orangeShadow {}
+
+.orangeShadow:hover {
+    box-shadow: 0px 2px 4px rgba(246, 135, 31, 0.13), 0px 12px 24px rgba(246, 135, 31, 0.33);
+}
+
+.blueShadow {}
+
+.blueShadow:hover {
+    box-shadow: 0px 2px 4px rgba(31, 128, 246, 0.13), 0px 12px 24px rgba(31, 117, 246, 0.33);
+}
+
+//Typography
+
+.fnLightText2 {
+    /* Light Text 2 */
+
+    font-family: 'Inter-Light' sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.fnLightText1 {
+    /* Light Text 1 */
+
+    font-family: 'Inter-Light' sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.fnRegularText2 {
+    /* Regular text 2 */
+
+    font-family: 'Inter-Regular' sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.fnRegularText1 {
+    /* Regular text */
+
+    font-family: 'Inter-Regular' sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.fnRegularMinimal {
+    /* Regular Minimal text */
+
+    font-family: 'Inter-Regular' sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+}
+
+.fnRegularMinimal2 {
+    /* Regular Minimal 2 */
+
+    font-family: 'Mulish-Bold' sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.fnTitleLight2 {
+    /* Title Light 2 */
+
+    font-family: 'Inter-Light' sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 35px;
+    line-height: 42px;
+    font-feature-settings: 'tnum' on, 'lnum' on;
+}
+
+.fnTitleLight {
+    /* Title Light */
+
+    font-family: 'Inter-Light' sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    /* or 150% */
+
+    letter-spacing: -0.06em;
+    font-feature-settings: 'calt' off;
+}
+
+.fnTitle2 {
+    /* Title 2 */
+
+    font-family: 'Inter-Regular' sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -0.075em;
+}
+
+.fnTitleBox {
+    /* Box Title 1 */
+
+    font-family: 'Inter-Regular' sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.fnTitle1 {
+    /* Title 1 */
+
+    font-family: 'Inter-Regular' sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 28px;
+    /* or 70% */
+    letter-spacing: -0.075em;
+    font-feature-settings: 'calt' off;
+}
+
+.fnTitle2Website {
+    /* Title 2 - Website */
+
+    font-family: 'Inter-Bold' sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 61px;
+    letter-spacing: 0.2px;
+}
+
+.fnTitle1Website {
+    /* Title 1 - Website */
+
+    font-family: 'Inter-Bold' sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 73px;
+    letter-spacing: 1.2px;
+}
+
+// Carrusel
+$carousel-control-color: $white;
+
+$carousel-indicator-width: 20px;
+$carousel-indicator-height: 20px;
+$carousel-indicator-opacity: 0.2;
+$carousel-indicator-active-bg: $primary;
+
+.carousel-control-prev,
+.carousel-control-next {
+    position: relative !important;
+    background-color: $secondary !important;
+    border-radius: 100%;
+    width: 50px !important;
+    height: 50px;
+}
+
+.carousel-indicators [data-bs-target] {
+    border-radius: 100%;
+}
+
+@media (min-width: 1400px) {
+    .carousel-indicators.home-xl {
+        bottom: -40px !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .carousel-indicators.home-lg {
+        bottom: -160px;
+        margin-left: 0 !important;
+        justify-content: left !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .carousel-inner .carousel-item.service>div {
+        display: none;
+    }
+
+    .carousel-inner .carousel-item.request>div {
+        display: none;
+    }
+
+    .carousel-inner .carousel-item.service>div:first-child {
+        display: block;
+    }
+
+    .carousel-inner .carousel-item.request>div:first-child {
+        display: block;
+    }
+}
+
+.carousel-inner .carousel-item.service.active,
+.carousel-inner .carousel-item-next.service,
+.carousel-inner .carousel-item-prev.service {
+    display: flex;
+}
+
+.carousel-inner .carousel-item.request.active,
+.carousel-inner .carousel-item-next.request,
+.carousel-inner .carousel-item-prev.request {
+    display: flex;
+}
+
+@media (min-width: 768px) {
+
+    .carousel-inner .carousel-item-end.service.active,
+    .carousel-inner .carousel-item-next.service {
+        transform: translateX(calc(100% / 3));
+    }
+
+    .carousel-inner .carousel-item-end.request.active,
+    .carousel-inner .carousel-item-next.request {
+        transform: translateX(50%);
+    }
+
+    .carousel-inner .carousel-item-start.service.active,
+    .carousel-inner .carousel-item-prev.service {
+        transform: translateX(calc(100% / -3));
+    }
+
+    .carousel-inner .carousel-item-start.request.active,
+    .carousel-inner .carousel-item-prev.request {
+        transform: translateX(-50%);
+    }
+}
+
+.carousel-inner .carousel-item-end.service,
+.carousel-inner .carousel-item-start.service {
+    transform: translateX(0);
+}
+
+.carousel-inner .carousel-item-end.request,
+.carousel-inner .carousel-item-start.request {
+    transform: translateX(0);
+}
+
+// Accordion.
+$accordion-button-active-bg: $indigoDye900;
+$accordion-button-active-color: $white;
+$accordion-button-focus-box-shadow: transparent;
+$accordion-icon-active-color: $white;
+
+// Modal
+$modal-content-border-radius: 20px;
+
+// Add custom code after this
+
+@import "../bootstrap/scss/bootstrap.scss";
