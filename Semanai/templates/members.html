@@ -7,32 +7,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
-    <link rel=" stylesheet" href="{% static 'masterSCSS/globalMaster.css' %}">
 
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/carousel/">
-
-    <!-- Bootstrap core CSS -->
-    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="carousel.css" rel="stylesheet">
+    <link href="../static/bootstrap/scss/bootstrap.css" rel="stylesheet">
+    
 </head>
 
 <body data-new-gr-c-s-check-loaded="14.1024.0" data-gr-ext-installed="">
 
     {% include 'navabarTop.html' %}
-    <main role="main">
-        <div class="container marketing">
+        <div class="container marketing mt-4">
 <div class = "row">
            {% for member in members %}
-                <div class="col-4  justify-content.center">
+                <div class="col-4 p-2 justify-content.center">
 
-                    <div class="card" style="width: 250px;">
-                        <img src="{{member.profilePicture.url}}" class=""  style="width: 250px; height: 250px;" alt="...">
+                    <div class="card " style="width: 300px;">
+                        <img src="{{member.profilePicture.url}}" class=""  style="width: 300px; height: 300px;" alt="...">
                         <div class="card-body">
-                          <h5 class="card-title">{{member.name}}</h5>
+                          <h6 class="card-title">{{member.name}}</h6>
                           <p class="card-text">{{member.description}}</p>
                         </div>
                       </div>
@@ -43,11 +35,9 @@
 
             
 
-            <hr class="featurette-divider">
         </div>
 
         {% include 'footer.html' %}
-    </main>
 
 
 </body>

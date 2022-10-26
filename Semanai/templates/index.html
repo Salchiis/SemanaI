@@ -1,77 +1,79 @@
 {% load static %}
-
+<!doctype html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+
     <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
-    <link rel=" stylesheet" href="{% static 'masterSCSS/globalMaster.css' %}">
 
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/carousel/">
 
     <!-- Bootstrap core CSS -->
-    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../static/bootstrap/scss/bootstrap.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="carousel.css" rel="stylesheet">
 </head>
 
-<body data-new-gr-c-s-check-loaded="14.1024.0" data-gr-ext-installed="">
+<body>
 
-    {% include 'navabarTop.html' %}
-    <main role="main">
-        <div class="container marketing">
-            <hr class="featurette-divider">
-            <div class="row featurette">
-                <div class="col-md-7">
-                    <h2 class="featurette-heading">Modelo AGV TEC 2</h2>
-                    <p class="lead">El principal motivo es el desarrollo de un vehiculo autónomo de arrastre para el
-                        movimiento de materiales en VW de México <br> <br> Automatización del vehículo <br> <br>
-                        Desarrollo de sistemas de navegación <br> <br> Existe una demanda en la industria por sistemas
-                        eficientes para el movimiento de mercancías dentro de sus instalaciones.</p>
-                </div>
-                <div class="col-md-5">
-                    <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500"
-                        style="width: 500px; height: 500px;" src="{% static 'img/carrito3.jpg' %}"
-                        data-holder-rendered="true">
-                </div>
-            </div>
-            <hr class="featurette-divider">
-            <div class="row featurette">
-                <div class="col-md-7 order-md-2">
-                    <h2 class="featurette-heading">Elementos del segundo prototipo</h2>
-                    <p class="lead">Plataforma eléctrica​ reconfigurable <br> <br>Capacidad de carga: 500 Kg​ <br>
-                        Velocidad máxima: 35 Km/Hr​ <br> Dimensión de plataforma: 1m x 1.8m</p>
-                </div>
-                <div class="col-md-5 order-md-1">
-                    <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500"
-                        src="{% static 'img/carrito2.jpg' %}" data-holder-rendered="true"
-                        style="width: 500px; height: 500px;">
-                </div>
-            </div>
 
-            <hr class="featurette-divider">
+{% block body %}
+{% include 'navabarTop.html' %}
 
-            <div class="row featurette">
-                <div class="col-md-7">
-                    <h2 class="featurette-heading">El de las recargas <span class="text-muted">v2.0.</span></h2>
-                    <p class="lead">El de las recargas.</p>
-                </div>
-                <div class="col-md-5">
-                    <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500"
-                        src="{% static 'img/carrito.jpg' %}" data-holder-rendered="true"
-                        style="width: 500px; height: 500px;">
-                </div>
-            </div>
-
+<div class="container marketing mt-5">
+    <hr class="featurette-divider">
+    <div class="row featurette">
+        <div class="col-md-7">
+            <h2 class="featurette-heading">Modelo AGV TEC 2</h2>
+            <p class="lead">El principal motivo es el desarrollo de un vehiculo autónomo de arrastre para el
+                movimiento de materiales en VW de México <br> <br> Automatización del vehículo <br> <br>
+                Desarrollo de sistemas de navegación <br> <br> Existe una demanda en la industria por sistemas
+                eficientes para el movimiento de mercancías dentro de sus instalaciones.</p>
         </div>
+        <div class="col-md-5">
+            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500"
+                style="width: 500px; height: 500px;" src="{% static 'img/carrito3.jpg' %}"
+                data-holder-rendered="true">
+        </div>
+    </div>
+    <hr class="featurette-divider">
+    <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading">Elementos del segundo prototipo</h2>
+            <p class="lead">Plataforma eléctrica​ reconfigurable <br> <br>Capacidad de carga: 500 Kg​ <br>
+                Velocidad máxima: 35 Km/Hr​ <br> Dimensión de plataforma: 1m x 1.8m</p>
+        </div>
+        <div class="col-md-5 order-md-1">
+            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500"
+                src="{% static 'img/carrito2.jpg' %}" data-holder-rendered="true"
+                style="width: 500px; height: 500px;">
+        </div>
+    </div>
 
-        {% include 'footer.html' %}
-    </main>
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+        <div class="col-md-7">
+            <h2 class="featurette-heading">El de las recargas <span class="text-muted">v2.0.</span></h2>
+            <p class="lead">El de las recargas.</p>
+        </div>
+        <div class="col-md-5">
+            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500"
+                src="{% static 'img/carrito.jpg' %}" data-holder-rendered="true"
+                style="width: 500px; height: 500px;">
+        </div>
+    </div>
+
+</div>
+{% include 'footer.html' %}
+
+{% endblock %}
+
+
+    
+
 
 
 </body>

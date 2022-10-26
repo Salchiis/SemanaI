@@ -14,3 +14,6 @@ def home(request):
 def members(request):
     members = miembros.objects.all()
     return render(request, 'members.html',{'members': members})
+
+def contacts(request):
+    return render(request,'contacto.html')
