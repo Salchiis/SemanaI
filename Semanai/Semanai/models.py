@@ -1,3 +1,4 @@
+from email.policy import default
 from turtle import title
 from django.db import models
 
@@ -23,6 +24,7 @@ class tarjetas(models.Model):
     description = models.CharField(max_length=500, null=True, blank=True)
     picture = models.ImageField(upload_to='static/img', null=True, blank=True)
     seccion = models.ForeignKey(secciones, on_delete=models.CASCADE)
+    principal = models.BooleanField(default=False)
 
     def __str__(self):
         return self.title
