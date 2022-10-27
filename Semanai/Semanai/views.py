@@ -6,7 +6,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from django.db.models import *
 
-from Semanai.models import miembros, secciones
+from Semanai.models import miembros, secciones, tarjetas
 
 def home(request):
     return render(request, 'index.html')
@@ -19,7 +19,13 @@ def contacts(request):
     return render(request,'contacto.html')
 
 def sections(request):
-    return render(request,'secciones.html')
+    sections = secciones.objects.all()
+    cards = tarjetas.objects.all()
+    return render(request,'secciones.html',{
+        "sections" : sections,
+        "cards" : cards,
+        
+    })
 
 def specs(request):
     specs = secciones.objects.all()
