@@ -24,41 +24,40 @@
     {% include 'navabarTop.html' %}
 
     <div class="container marketing mt-5">
+        {% for panel in panels %}
         <hr class="featurette-divider">
+        {% if forloop.counter|divisibleby:2 %}
         <div class="row featurette">
             <div class="col-md-7">
-                <h2 class="featurette-heading">Modelo AGV TEC 2</h2>
-                <p class="lead">El principal motivo es el desarrollo de un vehiculo autónomo de arrastre para el
-                    movimiento de materiales en VW de México <br> <br> Automatización del vehículo <br> <br>
-                    Desarrollo de sistemas de navegación <br> <br> Existe una demanda en la industria por sistemas
-                    eficientes para el movimiento de mercancías dentro de sus instalaciones.</p>
+                <h2 class="featurette-heading"> {{panel.title}} </h2>
+                <p class="lead"> {{panel.description}} </p>
             </div>
             <div class="col-md-5">
                 <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500"
-                    style="width: 500px; height: 500px;" src="{% static 'img/carrito3.jpg' %}"
+                    style="width: 500px; height: 500px;" src="{{ panel.picture.url }}"
                     data-holder-rendered="true">
             </div>
         </div>
-        <hr class="featurette-divider">
+        {% else %}
         <div class="row featurette">
-            <div class="col-md-7 order-md-2">
-                <h2 class="featurette-heading">Elementos del segundo prototipo</h2>
-                <p class="lead">Plataforma eléctrica​ reconfigurable <br> <br>Capacidad de carga: 500 Kg​ <br>
-                    Velocidad máxima: 35 Km/Hr​ <br> Dimensión de plataforma: 1m x 1.8m</p>
-            </div>
-            <div class="col-md-5 order-md-1">
+            <div class="col-md-5">
                 <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500"
-                    src="{% static 'img/carrito2.jpg' %}" data-holder-rendered="true"
-                    style="width: 500px; height: 500px;">
+                    style="width: 500px; height: 500px;" src="{{ panel.picture.url }}"
+                    data-holder-rendered="true">
+            </div>
+            <div class="col-md-7">
+                <h2 class="featurette-heading"> {{panel.title}} </h2>
+                <p class="lead"> {{panel.description}} </p>
             </div>
         </div>
+        {% endif %}
+        {% endfor %}
 
         <hr class="featurette-divider">
-
         <div class="row featurette">
             <div class="col-md-7">
-                <h2 class="featurette-heading">El de las recargas <span class="text-muted">v2.0.</span></h2>
-                <p class="lead">El de las recargas.</p>
+                <h2 class="featurette-heading">  <span class="text-muted"></span></h2>
+                <p class="lead">  </p>
             </div>
             <div class="col-md-5">
                 <iframe src="https://drive.google.com/file/d/1XoAcA4Feq3vd4ip8klZr7eX3_gmVX1Uq/preview" width="640"
@@ -72,6 +71,8 @@
                     </video>
                 </div>
             </div>
+
+        </div>
 
         </div>
         {% include 'footer.html' %}
