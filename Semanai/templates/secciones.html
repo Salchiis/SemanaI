@@ -10,16 +10,11 @@
     <link href="../static/bootstrap/scss/bootstrap.css" rel="stylesheet">
     <style>
         img {
-            display: block;
-            margin: auto;
-            object-fit: contain;
-            object-position: center;
             height: 50vh;
         }
 
         .carousel-caption {
-            background: rgba(9, 9, 9, 0.2);
-            color: white;
+            background: rgba(0, 0, 0, 0.2);
         }
 
     </style>
@@ -32,10 +27,10 @@
     <div class="container">
         {% for section in sections %}
 
-        <div class="row m-5">
-            <div class="col-2"></div>
-            <div class="col-8 align-content-center">
-                <div>
+        <div class="row my-5">
+            <div class="col d-none d-lg-block"></div>
+            <div class="col-xs-12 col-lg-8 m-0 align-content-center">
+                              <div>
                     <h2 class="text-center">{{section.title}}</h2>
                 </div>
                 <div>
@@ -49,19 +44,19 @@
                         {% if section.id == card.seccion.id %}
                         {% if card.principal == True %}
                         <div class="carousel-item active">
-                            <div class="carousel-caption d-none d-md-block">
+                            <div class="carousel-caption d-none d-md-block bottom-0">
                                 <h5>{{card.title}}</h5>
                                 <p>{{card.description}}</p>
                             </div>
-                            <img class="d-block" src="{{card.picture.url}}" alt="Third slide">
+                        <img class="d-block mx-auto" src="{{card.picture.url}}" alt="Third slide">
                         </div>
                          {% else %}
                         <div class="carousel-item">
-                            <div class="carousel-caption d-none d-md-block">
+                            <div class="carousel-caption d-none d-md-block bottom-0">
                                 <h5>{{card.title}}</h5>
                                 <p>{{card.description}}</p>
                             </div>
-                            <img class="d-block" src="{{card.picture.url}}" alt="Third slide">
+                            <img class="d-block mx-auto" src="{{card.picture.url}}" alt="Third slide">
                         </div>
                         {% endif %}                           
 
@@ -84,7 +79,7 @@
                 </div>
 
             </div>
-            <div class="col-2"></div>
+            <div class="col d-none d-lg-block"></div>
 
         </div>
         {% endfor %}
