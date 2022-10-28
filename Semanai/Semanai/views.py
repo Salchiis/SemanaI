@@ -6,10 +6,11 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from django.db.models import *
 
-from Semanai.models import miembros, secciones, tarjetas
+from Semanai.models import miembros, secciones, tarjetas, panel
 
 def home(request):
-    return render(request, 'index.html')
+    panels = panel.objects.all()
+    return render(request, 'index.html', {'panels': panels})
 
 def members(request):
     members = miembros.objects.all()

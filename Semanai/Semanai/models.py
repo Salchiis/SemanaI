@@ -31,7 +31,8 @@ class tarjetas(models.Model):
     
 class panel(models.Model):
     title = models.CharField("Titulo", max_length=50, null=True, blank=True)
-    description = models.CharField(max_length=500, null=True, blank=True)
+    description = models.TextField(max_length=500, null=True, blank=True)
+    picture = models.ImageField(upload_to='static/img', null=True, blank=True)
     
     def __str__(self):
         return self.title
