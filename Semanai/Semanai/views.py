@@ -27,6 +27,8 @@ def sections(request):
         
     })
 
+
+
 def specs(request):
     specs = secciones.objects.all()
     return render(request, 'specs.html',{'secciones': specs})
